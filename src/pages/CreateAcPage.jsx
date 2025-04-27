@@ -14,6 +14,12 @@ const CreateAcPage = () => {
 
 
   const handleCreateAccount = () => {
+    if (!name || !phone || !email || !password || !company) {
+      alert("Please fill in all the fields.");
+      return; // Stop further execution if any field is missing
+    }
+
+    console.log("Account creation triggered"); // Check if this logs to the console
     const userData = {
       name,
       phone,
@@ -22,11 +28,12 @@ const CreateAcPage = () => {
       company,
       Agency,
     };
-
+  
     localStorage.setItem('userData', JSON.stringify(userData));
-    alert("Account created successfully!")
-    navigate("/MyAccount")
-  }
+    alert("Account created successfully!");
+    navigate("/MyAccount");
+  };
+  
   return (
     <PageWrapper>
       <div className="w-[375px] h-[812px] flex justify-center border-2 border-gray-300 bg-[#F7F8F9] relative">
@@ -57,7 +64,7 @@ const CreateAcPage = () => {
               id="input"
               type="tel"
               pattern="[0-9]{10}"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setPhone(e.target.value)}
 
               className='h-[40px] w-[335px] px-4 py-2 text-lg outline-none border-[1px] border-[#CBCBCB] rounded-[6px] hover:border-[#CBCBCB] duration-200 peer focus:border-indigo-600 bg-inherit'
               required

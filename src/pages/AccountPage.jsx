@@ -4,6 +4,7 @@ import PageWrapper from '../Components/PageWrapper';
 
 const AccountPage = () => {
   const [user, setUser] = useState({name:'', email: ''});
+  
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('userData'));
@@ -21,6 +22,7 @@ const AccountPage = () => {
       </div>
 
       <div className='bg-gray-600 w-[76px] h-[76px] rounded-full absolute top-[98px] left-[20px]  '>
+        <img className='w-[76px] h-[76px] rounded-full' src="/user.png" alt="" />
       </div>
       <img src="/camera.png" alt="camera" className='absolute left-[79px] top-[147px] w-[21px] h-[23px] ' />
 
@@ -30,6 +32,8 @@ const AccountPage = () => {
 
       <p className='absolute left-[20px] top-[204px] text-[14px] leading-[22px] text-left text-[#1D2226] font-normal font-rubik capitalize tracking-normal w-[337px] '>Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam </p>
 
+
+      <button className='absolute top-[736px] left-[20px] w-[335px] h-[46px] bg-[#6C25FF]  rounded-[6px] text-[16px] text-[#FFFFFF] font-medium font-rubik hover:bg-[#CBCBCB] hover:text-[#1D2226]'>Delete Account</button>
     </div>
     </PageWrapper>
   );

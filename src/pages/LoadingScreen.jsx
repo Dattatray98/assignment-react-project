@@ -7,7 +7,7 @@ const LoadingScreen = () => {
 
   return (
     <PageWrapper>
-      <div className="w-[375px] h-[812px] flex justify-center border-2 border-gray-300 bg-[#F7F8F9] relative">
+      <div className="w-[375px] h-[812px] flex justify-center bg-[#F7F8F9] relative">
         <h1 className="absolute top-[549px] left-[20px] text-[28px] font-medium leading-[17px] w-[231px] h-[33px] text-[#1D2226] font-rubik">
           Welcome to PopX
         </h1>

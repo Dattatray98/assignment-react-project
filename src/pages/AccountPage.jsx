@@ -15,7 +15,7 @@ const AccountPage = () => {
 
   return (
     <PageWrapper>
-      <div className='w-[375px] h-[812px] flex justify-center border-2 border-gray-300 bg-[#F7F8F9] relative'>
+      <div className='w-[375px] h-[812px] flex justify-center bg-[#F7F8F9] relative'>
       <div className='absolute top-0 left-0 w-[371px] h-[68px] bg-white box-shadow opacity-100'>
 
         <h1 className='w-[146px] h-[22px] ml-[15px] mt-[27px] font-medium font-rubik capitalize'>Account Settings</h1>

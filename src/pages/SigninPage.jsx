@@ -28,7 +28,7 @@ const SigninPage = () => {
 
   return (
     <PageWrapper>
-      <div className="w-[375px] h-[812px] flex justify-center border-2 border-gray-300 bg-[#F7F8F9] relative">
+      <div className="w-[375px] h-[812px] flex justify-center bg-[#F7F8F9] relative">
         <h1 className="absolute top-[40px] left-[20px] text-[28px] font-medium leading-[36px] w-[188px] h-[69px] text-[#1D2226] font-rubik">
           Signin to your PopX account
         </h1>

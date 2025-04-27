@@ -16,7 +16,7 @@ const LoadingScreen = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
 
-        <button 
+        <button
           onClick={() => navigate('/createAc')}
           className="absolute top-[669px] left-[20px] w-[335px] h-[46px] bg-[#6C25FF] rounded-[6px] text-[16px] text-white font-medium font-rubik">
           Create Account

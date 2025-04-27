@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import LoadingScreen from './pages/LoadingScreen';
 import SigninPage from './pages/SigninPage';
 import CreateAcPage from './pages/CreateAcPage';
-import AccountPage from './pages/AccountPage';
+import AccountPage from './pages/AccountPage.jsx';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
